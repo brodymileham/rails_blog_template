@@ -6,15 +6,17 @@
       <% end %>
     </div>
   <% end %>
-  <div>
+  <div class="my-5">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
-  <div>
-    <%= form.label :body %>
-    <%= form.text_area :body %>
+  <div class="my-5"
+>
+    <%= form.label :content %>
+    <%= form.rich_text_area :content %>
   </div>
-  <div>
+  <div class="my-5"
+>
     <%= form.label :published_at %>
     <%= form.datetime_select :published_at, include_blank: true %>
   </div>
